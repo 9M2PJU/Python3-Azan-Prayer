@@ -14,8 +14,8 @@ def fetch_prayer_times():
         print("An error occurred while fetching prayer times:", e)
         return []
 
-def play_azan():
-    subprocess.run(['mpg321', 'azan.mp3'])  # Replace 'azan.mp3' with the actual path to your Azan audio file
+def play_azan(audio_file):
+    subprocess.run(['mpg321', audio_file])
 
 def main():
     prayer_times = fetch_prayer_times()
@@ -24,19 +24,25 @@ def main():
         print("No prayer times data available.")
         return
 
-    prayers = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"]
+    azan_files = {
+        "Fajr": "azan2.mp3",
+        "Dhuhr": "azan.mp3",
+        "Asr": "azan.mp3",
+        "Maghrib": "azan.mp3",
+        "Isha": "azan.mp3"
+    }
 
     while True:
         current_time = datetime.now()
 
-        for idx, time_epoch in enumerate(prayer_times):
+        for time_epoch in prayer_times:
             prayer_time = datetime.fromtimestamp(time_epoch)
 
-            if current_time.time() <= prayer_time.time() <= (current_time + timedelta(minutes=5)).time():
-                prayer_name = prayers[idx]
-                print(f"It's time for {prayer_name} prayer!")
-                play_azan()
-                break
+            for prayer_name, audio_file in azan_files.items():
+                if current_time.time() <= prayer_time.time() <= (current_time + timedelta(minutes=5)).time():
+                    print(f"It's time for {prayer_name} prayer!")
+                    play_azan(audio_file)
+                    break
 
         # Wait for one minute before checking again
         time.sleep(60)
