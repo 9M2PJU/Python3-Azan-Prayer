@@ -1,16 +1,15 @@
 # Python3-Azan-Prayer-For-Raspberry-Pi
 Fetch prayer times from e-solat and play azan.mp3
 
-Certainly, here are the revised instructions:
 
 1. **Requirements:**
    - Ensure you have Python 3 installed on your system.
-   - Download the `azan.py` script and the `azan.mp3` audio file.
+   - Download the `azan.py` script and the MP3 audio file.
 
 2. **Running the Script:**
-   - Place both `azan.py` and `azan.mp3` in the same folder.
+   - Place both `azan.py` and MP3 files in the same folder.
    - Open a terminal or command prompt.
-   - Navigate to the folder where `azan.py` and `azan.mp3` are located.
+   - Navigate to the folder where `azan.py` is located.
    - Run the script using the command: `python3 azan.py`
    - The script will check for prayer times every 60 seconds and play the Azan audio if it's time for prayer.
 
