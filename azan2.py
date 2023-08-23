@@ -17,8 +17,9 @@ def fetch_prayer_times():
             response = requests.get(url)
             response.raise_for_status()
             data = response.json()
-            prayer_times_cache = data['response']['times']
-            prayer_times_cache[-1]['fetch_time'] = datetime.now()  # Record fetch time
+            prayer_times = data['response']['times']
+            fetch_time = datetime.now()
+            prayer_times_cache = [{'time': time_entry, 'fetch_time': fetch_time} for time_entry in prayer_times]
         except requests.exceptions.RequestException as e:
             print("An error occurred while fetching prayer times:", e)
 
