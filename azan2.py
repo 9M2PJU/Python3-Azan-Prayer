@@ -39,7 +39,10 @@ def main():
 
         azan_files = {
             0: "azan2.mp3",  # Fajr
-            1: "azan.mp3",   # Dhuhr, Asr, Maghrib, Isha
+            2: "azan.mp3",   # Dhuhr
+            3: "azan.mp3",   # Asr
+            4: "azan.mp3",   # Maghrib
+            5: "azan.mp3"    # Isha
         }
 
         for idx, prayer_time in enumerate(prayer_times_cache):
@@ -48,7 +51,7 @@ def main():
             elif idx == 1:  # Sunrise, skip
                 continue
             else:  # Dhuhr, Asr, Maghrib, Isha
-                azan_file = azan_files[1]
+                azan_file = azan_files[2]
             
             prayer_datetime = datetime.fromtimestamp(prayer_time)
             time_difference = (prayer_datetime - current_time).total_seconds()
