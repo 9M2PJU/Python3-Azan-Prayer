@@ -29,6 +29,8 @@ Note: Make sure to replace `/path/to/azan.py` with the correct path to your `aza
 
 Remember to adjust permissions as needed to ensure that the script can be executed and that the audio file is accessible.
 
+P/S: Try azan2.py
+
 73,
 
 9M2PJU
