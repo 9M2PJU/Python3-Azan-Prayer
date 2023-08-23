@@ -11,7 +11,7 @@ Fetch prayer times from e-solat and play azan.mp3
    - Open a terminal or command prompt.
    - Navigate to the folder where `azan.py` is located.
    - Run the script using the command: `python3 azan.py`
-   - The script will check for prayer times every 60 seconds and play the Azan audio if it's time for prayer.
+   - The script will check for prayer times every 60 or 120 seconds and play the Azan audio if it's time for prayer.
 
 3. **Running on Boot (Optional):**
    - To have the script run automatically on every boot, follow these steps:
