@@ -1,23 +1,23 @@
-# Automated Azan Prayer Times Retrieval and Playback for Raspberry Pi (Python 3)
+# Raspberry Pi Automated Prayer Times Retrieval and Azan Playback (Python 3)
 
-This project focuses on fetching accurate prayer times from e-solat and playing the azan.mp3 files automatically on a Raspberry Pi. To set up and run the project, follow the steps below:
+This project is centered around effortlessly obtaining precise prayer times from e-solat and automatically playing the corresponding azan.mp3 files on a Raspberry Pi. To successfully establish and operate the project, adhere to the ensuing instructions:
 
-## Requirements:
+## Prerequisites:
 
-1. Make sure you have Python 3 and MPG123 installed on your system.
-2. Download the `fetch_prayer.py` and `read_prayer.py` scripts along with the necessary MP3 audio files.
+1. Verify the presence of Python 3 and MPG123 on your system.
+2. Acquire the `fetch_prayer.py` and `read_prayer.py` scripts, along with the essential MP3 audio files.
 
-## Running the Script:
+## Executing the Script:
 
-1. Place both the `.py` files and the MP3 files in the same directory.
-2. Open a terminal or command prompt.
-3. Navigate to the folder containing the `fetch_prayer.py` script.
-4. Execute the script using the following command: `python3 fetch_prayer.py`
-   - This script will retrieve the latest prayer times.
-5. Run the script again by using the command: `python3 read_prayer.py`
-   - This script will set up crontab values to play the azan files at their designated times.
+1. Position both `.py` files and the MP3 files within the same directory.
+2. Launch a terminal or command prompt.
+3. Navigate to the directory housing the `fetch_prayer.py` script.
+4. Execute the script using this command: `python3 fetch_prayer.py`
+   - This script will retrieve the most up-to-date prayer times.
+5. Re-run the script by employing this command: `python3 read_prayer.py`
+   - This script will establish crontab settings to automatically play the azan files at their designated times.
 
-**Note**: For convenience, you can schedule the `fetch_prayer.py` and `read_prayer.py` scripts to run daily using cron. This ensures that you always have the most up-to-date prayer times from e-solat.
+**Pro Tip**: For convenience, you can schedule the daily execution of `fetch_prayer.py` and `read_prayer.py` scripts using cron. This guarantees access to the latest e-solat prayer times. Remember to modify the region code in `fetch_prayer.py`. Refer to https://mpt.i906.my/code.html for guidance.
 
 73,
 
