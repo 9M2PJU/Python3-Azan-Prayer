@@ -16,7 +16,7 @@ def read_prayer_times(file_path):
     return prayer_times
 
 def add_cron_jobs(prayer_times):
-    cron = CronTab(user='dietpi')
+    cron = CronTab(user='CHANGE_ME')
 
     # Remove existing prayer time jobs
     cron.remove_all(comment="Prayer Time")
@@ -24,9 +24,9 @@ def add_cron_jobs(prayer_times):
     for prayer_index, prayer_time_str in prayer_times:
         prayer_hour, prayer_minute = map(int, prayer_time_str.split(':'))
         if prayer_index == 0:
-            audio_file = "/home/dietpi/azan2.mp3"
+            audio_file = "azan2.mp3"
         else:
-            audio_file = "/home/dietpi/azan.mp3"
+            audio_file = "azan.mp3"
         command = f"mpg123 {audio_file}"
         job = cron.new(command=command, comment="Prayer Time")
         job.setall(prayer_minute, prayer_hour, '*', '*', '*')
