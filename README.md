@@ -1,6 +1,6 @@
 # Raspberry Pi Automated Prayer Times Retrieval and Azan Playback (Python 3)
 
-This project is centered around effortlessly obtaining precise prayer times from e-solat and automatically playing the corresponding azan.mp3 files on a Raspberry Pi. To successfully establish and operate the project, adhere to the ensuing instructions:
+This project is centered around effortlessly obtaining precise prayer times from https://mpt.i906.my/index.html and automatically playing the corresponding azan.mp3 files on a Raspberry Pi. To successfully establish and operate the project, adhere to the ensuing instructions:
 
 ## Prerequisites:
 
