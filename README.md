@@ -1,6 +1,6 @@
 # Automated Prayer Times Retrieval and Azan Playback (Python 3)
 
-[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://youtube.com/shorts/0Jf2ifZXT9g?si=_En0I6R7lsk2ajxM)
+(https://youtube.com/shorts/0Jf2ifZXT9g?si=_En0I6R7lsk2ajxM)
 
 
 
