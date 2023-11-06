@@ -1,6 +1,8 @@
 # Automated Prayer Times Retrieval and Azan Playback (Python 3)
 
-https://youtube.com/shorts/0Jf2ifZXT9g?si=_En0I6R7lsk2ajxM
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://youtube.com/shorts/0Jf2ifZXT9g?si=_En0I6R7lsk2ajxM)
+
+
 
 This project is centered around effortlessly obtaining precise prayer times from https://mpt.i906.my/index.html and automatically playing the corresponding azan.mp3 files. To successfully establish and operate the project, adhere to the ensuing instructions:
 
