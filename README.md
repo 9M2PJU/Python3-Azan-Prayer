@@ -21,7 +21,7 @@ This project is centered around effortlessly obtaining precise prayer times from
    - This script will retrieve the most up-to-date prayer times.
 5. Re-run the script by employing this command: `python3 read_prayer.py`
    - This script will establish crontab settings to automatically play the azan files at their designated times.
-6. And lastly, edit your crontab by using `crontab -e` and add `0 5 * * * /usr/bin/python3 /home/dietpi/azan/fetch_prayer.py` so it will fetch daily prayer times at 5 morning.   
+6. And lastly, edit your crontab by using `crontab -e` and add `0 5 * * * /usr/bin/python3 /home/dietpi/azan/fetch_prayer.py` so it will fetch updated daily prayer times at 5 AM.   
 
 
 **Pro Tip**: For convenience, you can schedule the daily execution of `fetch_prayer.py` and `read_prayer.py` scripts using cron. This guarantees access to the latest e-solat prayer times. Remember to modify the username in `read_prayer.py` line 19 and region code in `fetch_prayer.py` line 23. Refer to https://mpt.i906.my/code.html for guidance.
