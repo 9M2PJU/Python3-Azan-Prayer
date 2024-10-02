@@ -26,6 +26,4 @@ This project is centered around effortlessly obtaining precise prayer times from
 
 **Pro Tip**: For convenience, you can schedule the daily execution of `fetch_prayer.py` and `read_prayer.py` scripts using cron. This guarantees access to the latest e-solat prayer times. Remember to modify the username in `read_prayer.py` line 19 and region code in `fetch_prayer.py` line 23. Refer to https://mpt.i906.my/code.html for guidance.
 
-73,
 
-9M2PJU
